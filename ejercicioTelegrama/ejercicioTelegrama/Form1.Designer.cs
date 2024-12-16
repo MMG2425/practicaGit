@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            checkBox2 = new CheckBox();
+            txtTelegrama = new TextBox();
+            chkUrgente = new CheckBox();
             button1 = new Button();
-            textBox2 = new TextBox();
+            txtPrecio = new TextBox();
             label1 = new Label();
             label2 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(47, 86);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(665, 100);
-            textBox1.TabIndex = 0;
+            txtTelegrama.Location = new Point(47, 86);
+            txtTelegrama.Multiline = true;
+            txtTelegrama.Name = "textBox1";
+            txtTelegrama.Size = new Size(665, 100);
+            txtTelegrama.TabIndex = 0;
             // 
             // checkBox2
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(47, 252);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(73, 19);
-            checkBox2.TabIndex = 2;
-            checkBox2.Text = "Urgente?";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            chkUrgente.AutoSize = true;
+            chkUrgente.Location = new Point(47, 252);
+            chkUrgente.Name = "checkBox2";
+            chkUrgente.Size = new Size(73, 19);
+            chkUrgente.TabIndex = 2;
+            chkUrgente.Text = "Urgente?";
+            chkUrgente.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -63,15 +62,15 @@
             button1.TabIndex = 3;
             button1.Text = "Calcular";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += button_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(92, 319);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(122, 23);
-            textBox2.TabIndex = 4;
+            txtPrecio.Location = new Point(92, 319);
+            txtPrecio.Multiline = true;
+            txtPrecio.Name = "textBox2";
+            txtPrecio.Size = new Size(122, 23);
+            txtPrecio.TabIndex = 4;
             // 
             // label1
             // 
@@ -81,7 +80,6 @@
             label1.Size = new Size(40, 15);
             label1.TabIndex = 5;
             label1.Text = "Coste:";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -92,7 +90,6 @@
             label2.Size = new Size(35, 15);
             label2.TabIndex = 6;
             label2.Text = "Texto";
-            label2.Click += label2_Click;
             // 
             // Form1
             // 
@@ -101,10 +98,10 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
+            Controls.Add(txtPrecio);
             Controls.Add(button1);
-            Controls.Add(checkBox2);
-            Controls.Add(textBox1);
+            Controls.Add(chkUrgente);
+            Controls.Add(txtTelegrama);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -113,10 +110,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private CheckBox checkBox2;
+        private TextBox txtTelegrama;
+        private CheckBox chkUrgente;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox txtPrecio;
         private Label label1;
         private Label label2;
     }

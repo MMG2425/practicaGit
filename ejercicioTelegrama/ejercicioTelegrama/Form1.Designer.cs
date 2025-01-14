@@ -53,7 +53,7 @@
             button1.TabIndex = 3;
             button1.Text = "Calcular";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button_Click;
+            button1.Click += button1_Click;
             // 
             // txtPrecio
             // 
@@ -103,7 +103,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "Ordinario";
             radioButton2.UseVisualStyleBackColor = true;
-            radioButton2.CheckedChanged += button_Click;
+            radioButton2.CheckedChanged += button1_Click;
             // 
             // Form1
             // 
